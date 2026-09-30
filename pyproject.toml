@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SPECT_Bunjy"
+version = "0.0.1"
+authors = [
+  { name="Ben Hansen", email="2758304h@student.gla.ac.uk" },
+]
+description = "P5 Masters' Project functions package"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICENCSE"]
+
+dependencies = [
+  "numpy>=2.0.2",
+  "matplotlib>=3.9.2",
+  "scipy>=1.13.1"
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
